@@ -14,12 +14,6 @@
 	
 	-->
 	<style>
-	@-webkit-keyframes pulsating {
-		  0% { text-shadow: 0 -1px 1px hsla(120, 0%, 0%, 0.75), 0 0  8px hsla(60, 40%, 45%, 0.3); }
-		 50% { text-shadow: 0 -1px 1px hsla(120, 0%, 0%, 0.75), 0 0 64px hsla(60, 80%, 85%, 0.8); }
-		100% { text-shadow: 0 -1px 1px hsla(120, 0%, 0%, 0.75), 0 0  8px hsla(60, 40%, 45%, 0.3); }
-	}
-	
 	@keyframes pulsating {
 		  0% { text-shadow: 0 -1px 1px hsla(120, 0%, 0%, 0.75), 0 0  8px hsla(60, 40%, 45%, 0.3); }
 		 50% { text-shadow: 0 -1px 1px hsla(120, 0%, 0%, 0.75), 0 0 64px hsla(60, 80%, 85%, 0.8); }
@@ -51,8 +45,7 @@
 	
 	article h1 {
 		font-size: 6.2857em; /* 88px (88/14) */
-		-webkit-animation: pulsating 16s ease-in-out infinite;
-		        animation: pulsating 16s ease-in-out infinite;
+		animation: pulsating 16s ease-in-out infinite;
 	}
 	
 	/* Make sure HTML5 elements display as block */
@@ -69,15 +62,11 @@
 		line-height: 2;
 		text-align: center;
 		margin: 0 auto;
-		-webkit-border-radius: 20px;
-		-moz-border-radius: 20px;
 		border-radius: 20px;
 		border: 2px solid rgba(255, 255, 255, 0.5);
-		-webkit-box-shadow: 0 2px 8px rgba(255, 255, 255, 0.25);
-		-moz-box-shadow: 0 2px 8px rgba(255, 255, 255, 0.25);
 		box-shadow: 0 2px 8px rgba(255, 255, 255, 0.25);
 		opacity: 0.8;
-		-webkit-transition: opacity 1s ease-in;
+		transition: opacity 1s ease-in;
 	}
 	
 	a:hover { opacity: 1.0; }
