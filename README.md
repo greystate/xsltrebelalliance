@@ -2,8 +2,8 @@
 
 This is the splash page from the [XSLT Rebel Alliance][REB] website.
 
-It's hosted with [GitHub Pages][GHP] and that's about it. No signup, no nothing.
-
+Needing to cut down on some expenses here and there I decided to move this
+to be hosted with [GitHub Pages][GHP]. Too attached to just let it go :)
 
 [REB]: https://xsltrebelalliance.com/
 [GHP]: https://pages.github.com/
