@@ -19,14 +19,12 @@
 		 50% { text-shadow: 0 -1px 1px hsla(120, 0%, 0%, 0.75), 0 0 64px hsla(60, 80%, 85%, 0.8); }
 		100% { text-shadow: 0 -1px 1px hsla(120, 0%, 0%, 0.75), 0 0  8px hsla(60, 40%, 45%, 0.3); }
 	}
+	
 	html, body { margin: 0; padding: 0; }
 
 	body {
-		background: #222;
-		color: #f8cf47;
-		color: rgba(248, 207, 71, 0.6);
 		text-shadow: 0 -1px 1px hsla(120, 0%, 0%, 0.75), 0 0 64px hsla(60, 80%, 85%, 0.8);
-		font-size: 0.875em; /* 14px (14/16) */
+		font-size: 0.875em;
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
@@ -40,53 +38,53 @@
 	#logo h1 {
 		margin-top: 2em;
 		opacity: 0.8;
-		font-size: 2.2857em; /* 32px (32/14) */
+		font-size: 2.2857em;
 	}
 	
 	article h1 {
-		font-size: 6.2857em; /* 88px (88/14) */
+		font-size: 6.2857em;
 		animation: pulsating 16s ease-in-out infinite;
 	}
 	
-	/* Make sure HTML5 elements display as block */
 	article, aside, footer, header, hgroup, nav, section { display: block; }
 	
-	a {
-		background-color: #5d7728;
-		color: #fff;
-		font-family: printf-1, printf-2, serif;
-		display: block;
-		text-decoration: none;
-		width: 20em;
-		height: 2em;
-		line-height: 2;
-		text-align: center;
-		margin: 0 auto;
-		border-radius: 20px;
-		border: 2px solid rgba(255, 255, 255, 0.5);
-		box-shadow: 0 2px 8px rgba(255, 255, 255, 0.25);
-		opacity: 0.8;
-		transition: opacity 1s ease-in;
+	a:hover { opacity: 1.0; }
+
+	:root {
+		--color: #2229;
+		--bgcolor: #dde;
+		color-scheme: light dark;
 	}
 	
-	a:hover { opacity: 1.0; }
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--color: #f8cf4799;
+			--bgcolor: #222;
+		}
+	}
+	
+	body {
+		background: var(--bgcolor);
+		color: var(--color);
+	}
+	
+	@media (max-width: 50em) {
+		body { font-size: 0.5em; }
+	}
 	</style>
 
-	<script src="https://use.typekit.com/ufa7brq.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
-
 	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-11788998-4']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-11788998-4']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
 	</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+	<link rel="stylesheet" href="https://use.typekit.com/ufa7brq.css">
 </head>
 <body>
 
