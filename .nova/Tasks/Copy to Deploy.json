@@ -1,0 +1,12 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "cp $TM_PROJECT_DIRECTORY\/index.html $DEPLOY_DIRECTORY\ncp $TM_PROJECT_DIRECTORY\/fonts\/*.* $DEPLOY_DIRECTORY\/fonts"
+    }
+  },
+  "environment" : {
+    "DEPLOY_DIRECTORY" : "\/Users\/chriz\/Development\/src\/pimpmyxslt\/pimpmyxslt.Web\/rebelalliance",
+    "TM_PROJECT_DIRECTORY" : "${WorkspaceFolder}"
+  }
+}
